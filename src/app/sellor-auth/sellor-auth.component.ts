@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { signup } from '../dataType';
+import { login, signup } from '../dataType';
 import { SellerService } from '../services/seller.service';
 
 @Component({
@@ -9,13 +9,25 @@ import { SellerService } from '../services/seller.service';
   styleUrls: ['./sellor-auth.component.scss']
 })
 export class SellorAuthComponent {
+  isLogin:boolean = false;
   constructor(public server:SellerService,public router:Router){
 
   }
   ngOnInit():void{
+  
     this.server.reloadSeller();
   }
-
+  openLogIn(){
+    if(this.isLogin ==true){
+      this.isLogin = false
+    }else{
+      this.isLogin= true
+    }
+    
+  }
+  login(data:login){
+    console.log(data)
+  }
   signup(v:signup):void{
 console.log(v)
 this.server.userSignUp(v).subscribe((res)=>{

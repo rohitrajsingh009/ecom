@@ -3,3 +3,7 @@ export interface signup{
     email:String,
     pass:String
 }
+export interface login{
+    email:String,
+    pass:String
+}
