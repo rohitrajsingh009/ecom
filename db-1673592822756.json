@@ -1,0 +1,34 @@
+{
+  "seller": [
+    {
+      "name": "xyz",
+      "email": "test@gmail.com",
+      "pass": "Mohali@123",
+      "id": 1
+    },
+    {
+      "name": "abc",
+      "email": "test@gmail.com",
+      "pass": "Mohali@123",
+      "id": 2
+    },
+    {
+      "name": "seller",
+      "email": "seller",
+      "pass": "seller",
+      "id": 3
+    },
+    {
+      "name": "Rohit Raj Singh",
+      "email": "rohitraj.smsit@gmail.com",
+      "pass": "Test@123",
+      "id": 4
+    },
+    {
+      "name": "helloq",
+      "email": "hello@gmail.com",
+      "pass": "hello@123",
+      "id": 5
+    }
+  ]
+}
